@@ -1,0 +1,16 @@
+<p>login works!</p>
+<div class="container">
+  <form action="">
+    <h2>Login</h2>
+
+    <mat-form-field class="example-full-width">
+      <input matInput [formControl]="userEmail" placeholder="Email" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput [formControl]="userPassword" placeholder="Password" type="password" />
+    </mat-form-field>
+    <a routerLink="/home" routerLinkActive="active">
+      <button mat-button (click)="onClick()">Send</button></a
+    >
+  </form>
+</div>
