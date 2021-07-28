@@ -11,13 +11,13 @@ app.use(compression());
 app.use(
   CONTEXT,
   express.static(
-    path.resolve(__dirname, '../dist/Discounti')
+    path.resolve(__dirname, '../dist/discounti')
   )
 );
 app.use(
   '/',
   express.static(
-    path.resolve(__dirname, '../dist/Discounti')
+    path.resolve(__dirname, '../dist/discounti')
   )
 );
 app.listen(PORT, () =>
