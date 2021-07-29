@@ -20,6 +20,12 @@ app.use(
     path.resolve(__dirname, '../dist/discounti')
   )
 );
+app.use(
+  '*',
+  express.static(
+    path.resolve(__dirname, '../dist/discounti')
+  )
+);
 app.listen(PORT, () =>
   console.log(`App running on http://localhost:${PORT}${CONTEXT}`)
 );
