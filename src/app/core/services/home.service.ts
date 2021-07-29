@@ -41,7 +41,7 @@ export class HomeService {
         remoteDiscount.discountType === 'PRICE' ? '%' : ''),
       image: remoteDiscount.discountImages.length
         ? remoteDiscount.discountImages[0].image
-        : 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png',
+        : 'https://assets.intergiro.net.br/arquivos/labtemp/img/no-image.png',
       coordinates: remoteDiscount.vendorLocations
         ? getCoordinates(remoteDiscount)
         : [[50.094, 26.981]],
